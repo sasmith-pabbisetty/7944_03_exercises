@@ -65,7 +65,6 @@ Q6 <- function(df){
   return(d2)
 }
 
-df <- read.csv(text = gsub("\\\\,", "-", readLines("imdb.csv")))
 
 # Q7 get imdb rating for fifth movie of dataframe
 
@@ -119,7 +118,7 @@ Q12 <- function(df){
 
 # Q13 subset only numeric columns
 
-Q12 <- function(df){
+Q13 <- function(df){
   df <- select_if(df,is.numeric)
   return(df)
 }
